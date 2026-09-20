@@ -21,7 +21,7 @@ public class Challenge18 implements Challenge {
   private static final String md5Hash = "MD5";
   private static final String sha1Hash = "SHA1";
 
-  public Challenge18(@Value("aHVudGVyMg==") String hashPassword) {
+  public Challenge18(@Value("U3RyMG5nI0h1bnQzciEyMDI2eEs5") String hashPassword) {
     this.hashPassword = hashPassword;
   }
 

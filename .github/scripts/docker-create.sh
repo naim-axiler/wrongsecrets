@@ -95,7 +95,7 @@ Heroku_publish_prod(){
     heroku container:login
     echo "heroku deployment to prod"
     cd ../..
-    heroku container:push --recursive --arg argBasedVersion=${tag}heroku,CANARY_URLS=http://canarytokens.com/feedback/images/traffic/tgy3epux7jm59n0ejb4xv4zg3/submit.aspx,http://canarytokens.com/traffic/cjldn0fsgkz97ufsr92qelimv/post.jsp --app=wrongsecrets
+    heroku container:push --recursive --arg argBasedVersion=${tag}heroku,CANARY_URLS=http://canarytokens.com/feedback/images/traffic/p9xk2mwq8tjv4l6z1b7n3h5r0/submit.aspx,http://canarytokens.com/traffic/m7q2w9x4k1v6b3n8h5r0c2j9t/post.jsp --app=wrongsecrets
     heroku container:release web --app=wrongsecrets
     echo "wait for contianer to come up"
     until curl --output /dev/null --silent --head --fail https://wrongsecrets.herokuapp.com; do
@@ -198,7 +198,7 @@ fi
 if test -n "${buildarg+x}"; then
     echo "buildarg is set"
 else
-    buildarg="argBasedPassword='this is on your command line'"
+    buildarg="argBasedPassword='CLI#P4ssw0rd!2026\$xK9mP'"
     echo "Setting buildarg to ${buildarg}"
 fi
 
@@ -479,7 +479,7 @@ echo_next_steps() {
         #staging (https://arcane-scrubland-42646.herokuapp.com/)
         echo "Completed docker upload for X86, now taking care of heroku, do yourself: update Dockerfile.web, then run 'heroku container:login'"
         echo "then for the test container: 'heroku container:push --recursive --arg argBasedVersion=${tag}heroku --app arcane-scrubland-42646' and 'heroku container:release web --app arcane-scrubland-42646'"
-        echo "then for the prd container:'heroku container:push --recursive --arg argBasedVersion=${tag}heroku --arg CANARY_URLS=http://canarytokens.com/feedback/images/traffic/tgy3epux7jm59n0ejb4xv4zg3/submit.aspx,http://canarytokens.com/traffic/cjldn0fsgkz97ufsr92qelimv/post.jsp --app=wrongsecrets' and release 'heroku container:release web --app=wrongsecrets'"
+        echo "then for the prd container:'heroku container:push --recursive --arg argBasedVersion=${tag}heroku --arg CANARY_URLS=http://canarytokens.com/feedback/images/traffic/p9xk2mwq8tjv4l6z1b7n3h5r0/submit.aspx,http://canarytokens.com/traffic/m7q2w9x4k1v6b3n8h5r0c2j9t/post.jsp --app=wrongsecrets' and release 'heroku container:release web --app=wrongsecrets'"
         #want to release? do heroku container:release web --app=wrongsecrets
     fi
 }

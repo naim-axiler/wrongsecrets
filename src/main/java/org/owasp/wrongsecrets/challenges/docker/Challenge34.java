@@ -26,11 +26,11 @@ public class Challenge34 extends FixedAnswerChallenge {
   }
 
   private String generateKey() {
-    String encryptedKey = "123%78___+WEssweLKWEJROUVHLAMW,NERO";
+    String encryptedKey = "Pr0d#K3yRot4t!0n2026$xK";
     // note the static salt in use to get to the same key. otherwise the key is not reusable.
     Pbkdf2PasswordEncoder encoder =
         new Pbkdf2PasswordEncoder(
-            "secret_salt",
+            "p3pp3r_2026_st4tic",
             0,
             100000,
             Pbkdf2PasswordEncoder.SecretKeyFactoryAlgorithm.PBKDF2WithHmacSHA256);

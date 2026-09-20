@@ -41,7 +41,7 @@ public class Challenge59 extends FixedAnswerChallenge {
     } catch (Exception e) {
       log.warn("Webhook URL not properly set for Slack in {}", this);
       // Return a default value if the environment variable is not properly set
-      return "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
+      return "https://hooks.slack.com/services/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x";
     }
   }
 

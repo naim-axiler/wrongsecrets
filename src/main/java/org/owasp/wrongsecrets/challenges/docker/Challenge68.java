@@ -17,13 +17,13 @@ import org.springframework.stereotype.Component;
 public class Challenge68 extends FixedAnswerChallenge {
 
   private static final String CIPHERTEXT =
-      "etl6oWVrKiBvZWM6eLdvzdtkKz+AHrsJltbkl0JQ8SY1qZpQD+WqrOG1ckJfaDo=";
+      "Y/akg+GnUBRZdYI04fFnN//Vhz01INi3bG5WBKvuGmXc8Fak6u1VRvrt";
 
   @Override
   public String getAnswer() {
     try {
-      byte[] keyBytes = "SuperSecretKey12".getBytes(StandardCharsets.UTF_8);
-      byte[] ivBytes = "InitVector12".getBytes(StandardCharsets.UTF_8);
+      byte[] keyBytes = "Ch4tGPT#K3y!2026".getBytes(StandardCharsets.UTF_8);
+      byte[] ivBytes = "GPT1v3ct0r!2".getBytes(StandardCharsets.UTF_8);
       byte[] cipherBytes = Base64.getDecoder().decode(CIPHERTEXT);
       SecretKeySpec keySpec = new SecretKeySpec(keyBytes, "AES");
       GCMParameterSpec gcmSpec = new GCMParameterSpec(128, ivBytes);

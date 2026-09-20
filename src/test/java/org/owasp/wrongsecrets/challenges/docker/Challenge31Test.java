@@ -27,7 +27,7 @@ class Challenge31Test {
   }
 
   private String getanswer() {
-    String str = "vozvtbeY6++kjJz3tPn84LeM77I=";
+    String str = "u6rc65no4uKU6pu33/3RzA==";
     byte[] arr = Base64.getDecoder().decode(str);
 
     byte[] invertedBytes = new byte[arr.length];

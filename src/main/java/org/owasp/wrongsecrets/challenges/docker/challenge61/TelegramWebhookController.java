@@ -126,7 +126,7 @@ public class TelegramWebhookController {
   private String getBotToken() {
     // Same double-encoded bot token as in Challenge61
     String encodedToken =
-        "T0RFek1qZzJOalkwTXpwQlFVaEtiWFphY1haMlRUbGtTVEp5ZEVKUGRTMHRWMDFhZVUxR1ZHWklUbTg1U1E9PQo=";
+        "TnpnME5URXlNekE1TXpwQlFVaG1NMnRNYlRsUmVGSjJNbGwzV25RNGJsQmpTbk0wUkdWSGFGVTNZazR4Ync9PQ==";
     String firstDecode = new String(Base64.decode(encodedToken), UTF_8);
     return new String(Base64.decode(firstDecode), UTF_8);
   }

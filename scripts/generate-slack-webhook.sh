@@ -7,7 +7,7 @@
 set -e
 
 # Default webhook URL if none provided
-DEFAULT_WEBHOOK="https://hooks.slack.com/services/T123456789/B123456789/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p"
+DEFAULT_WEBHOOK="https://hooks.slack.com/services/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x"
 
 # Function to validate webhook URL format
 validate_webhook_url() {

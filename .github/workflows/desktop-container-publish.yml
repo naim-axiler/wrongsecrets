@@ -91,7 +91,7 @@ jobs:
 
       - name: Create secret file for build
         run: |
-          echo "wrongsecret-3" > /tmp/mysecret.txt
+          echo 'bld#S3cr3t!2026$xK9mPqL' > /tmp/mysecret.txt
 
       - name: Build and push Docker image
         id: build

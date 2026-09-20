@@ -54,7 +54,7 @@ echo "Putting a challenge key in"
 kubectl exec vault-0 -n vault -- vault kv put secret/injected vaultinjected.value="$(openssl rand -base64 16)"
 
 echo "Putting a challenge key in"
-kubectl exec vault-0 -n vault -- vault kv put secret/codified challenge47secret.value="debugvalue"
+kubectl exec vault-0 -n vault -- vault kv put secret/codified challenge47secret.value="Vau1t!nject#Ch4ll3ng3$2026"
 
 echo "Putting a subkey issue in"
 kubectl exec vault-0 -n vault -- vault kv put secret/wrongsecret aaaauser."$(openssl rand -base64 8)"="$(openssl rand -base64 16)"
@@ -118,7 +118,7 @@ capabilities = ["list", "read"]
 EOF'
 
 kubectl exec vault-0 -n vault -- vault auth enable userpass
-kubectl exec vault-0 -n vault -- vault write auth/userpass/users/helper password=foo policies=standard_sre
+kubectl exec vault-0 -n vault -- vault write auth/userpass/users/helper password="Vau1t#Us3r!P@ss2026" policies=standard_sre
 
 echo "Write secrets for secret-challenge"
 kubectl exec vault-0 -n vault -- vault write auth/kubernetes/role/secret-challenge \
@@ -128,6 +128,6 @@ kubectl exec vault-0 -n vault -- vault write auth/kubernetes/role/secret-challen
   ttl=24h &&
   vault kv put secret/secret-challenge vaultpassword.password="$(openssl rand -base64 16)" &&
   vault kv put secret/application vaultpassword.password="$(openssl rand -base64 16)" &&
-  vault kv put secret/codified challenge47secret.value="debugvalue"
+  vault kv put secret/codified challenge47secret.value="Vau1t!nject#Ch4ll3ng3$2026"
 
 kubectl create serviceaccount vault

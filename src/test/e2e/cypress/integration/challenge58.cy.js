@@ -44,7 +44,7 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
     cy.get('body').should(($body) => {
       const text = $body.text()
       // Look for typical database connection error patterns that might expose credentials
-      const hasErrorIndicators = text.includes('SuperSecretDB2024!') ||
+      const hasErrorIndicators = text.includes('Rk9#mP2$vL8xQ7wZ') ||
                                 text.includes('connection') ||
                                 text.includes('database') ||
                                 text.includes('error') ||
@@ -60,7 +60,7 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
     cy.visit('/error-demo/database-connection')
 
     // Look for the specific secret in the page content
-    cy.get('body', { timeout: 10000 }).should('contain', 'SuperSecretDB2024!')
+    cy.get('body', { timeout: 10000 }).should('contain', 'Rk9#mP2$vL8xQ7wZ')
   })
 
   it('Can solve the challenge using the exposed database password', () => {
@@ -68,13 +68,13 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
     cy.get(ERROR_DEMO_LINK).click()
 
     // Wait for error page and extract the secret
-    cy.get('body', { timeout: 10000 }).should('contain', 'SuperSecretDB2024!')
+    cy.get('body', { timeout: 10000 }).should('contain', 'Rk9#mP2$vL8xQ7wZ')
 
     // Navigate back to the challenge page
     cy.visit('/challenge/challenge-58')
 
     // Use the secret to solve the challenge
-    cy.dataCy(ChallengesPage.ANSWER_TEXTBOX).type('SuperSecretDB2024!')
+    cy.dataCy(ChallengesPage.ANSWER_TEXTBOX).type('Rk9#mP2$vL8xQ7wZ')
     cy.dataCy(ChallengesPage.SUBMIT_TEXTBOX_BTN).click()
 
     // Verify success
@@ -102,14 +102,14 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
 
     // Verify the error endpoint exposes credentials (educational success criteria)
     cy.visit('/error-demo/database-connection')
-    cy.get('body', { timeout: 10000 }).should('contain', 'SuperSecretDB2024!')
+    cy.get('body', { timeout: 10000 }).should('contain', 'Rk9#mP2$vL8xQ7wZ')
 
     // This demonstrates how poor error handling can expose database credentials
     cy.log('Successfully demonstrated database credential exposure - users learn how error handling can leak sensitive connection information')
 
     // Verify this allows solving the challenge
     cy.visit('/challenge/challenge-58')
-    cy.dataCy(ChallengesPage.ANSWER_TEXTBOX).type('SuperSecretDB2024!')
+    cy.dataCy(ChallengesPage.ANSWER_TEXTBOX).type('Rk9#mP2$vL8xQ7wZ')
     cy.dataCy(ChallengesPage.SUBMIT_TEXTBOX_BTN).click()
     cy.dataCy(ChallengesPage.SUCCESS_ALERT).should('contain', 'Your answer is correct!')
   })
@@ -135,7 +135,7 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
     })
 
     // Most importantly, verify the credentials are exposed
-    cy.get('body').should('contain', 'SuperSecretDB2024!')
+    cy.get('body').should('contain', 'Rk9#mP2$vL8xQ7wZ')
 
     cy.log('Educational objective achieved: Database credentials exposed through error handling demonstrate real-world vulnerability')
   })
@@ -151,7 +151,7 @@ describe('Challenge 58 Database Connection String Exposure Tests', () => {
       const hasConnectionString = content.includes('jdbc:') ||
                                  content.includes('postgresql://') ||
                                  content.includes('connection string') ||
-                                 content.includes('SuperSecretDB2024!')
+                                 content.includes('Rk9#mP2$vL8xQ7wZ')
       expect(hasConnectionString, 'Expected database connection string or credential exposure').to.be.true
     })
   })

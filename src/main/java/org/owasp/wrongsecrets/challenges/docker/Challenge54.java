@@ -29,14 +29,14 @@ public class Challenge54 extends FixedAnswerChallenge {
           "Though using AES CBC is a bad idea now that we have GCM-SIV, we want to use a simple"
               + " example")
   private String decryptAES() {
-    final String encryptedSecret = "qQJhKBO20XX1y8/AJVM4PwME0Sl+l/3/76cP6zIRLJo=";
-    final String passphrase = "key_to_decrypt_the_secret";
+    final String encryptedSecret = "gQQc9CWN4ITob1FVe04Y/w7ay7muu0o7tMR2JsZfyYw=";
+    final String passphrase = "g1t1gn0r3_1s_n0t_4_v4ult_2026";
     try {
 
       MessageDigest sha = MessageDigest.getInstance("SHA-256");
       byte[] keyBytes = sha.digest(passphrase.getBytes(StandardCharsets.UTF_8));
       SecretKeySpec secretKey = new SecretKeySpec(keyBytes, "AES");
-      byte[] ivBytes = "0123456789abcdef".getBytes(StandardCharsets.UTF_8); // 16 chars = 128 bits
+      byte[] ivBytes = "g1t1v3ct0r#2026!".getBytes(StandardCharsets.UTF_8); // 16 chars = 128 bits
       IvParameterSpec ivSpec = new IvParameterSpec(ivBytes);
 
       Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");

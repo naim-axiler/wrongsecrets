@@ -26,6 +26,6 @@ public class Challenge43 implements Challenge {
 
   private String getSecretKey() {
     return new String(
-        Base32.decode(new String(Base64.decode("SU5FRkVTS1RLUkdVQ1VaU0pNWkRHPT09"), UTF_8)), UTF_8);
+        Base32.decode(new String(Base64.decode("S0laV0laQlJPUVJWR00zRE9JWlhJSUpTR0FaRE1KRFlKTTRXMlVBPQ=="), UTF_8)), UTF_8);
   }
 }

@@ -16,9 +16,9 @@ public class Challenge58 implements Challenge {
 
   // Simulated database connection string with embedded credentials
   private static final String DB_CONNECTION_STRING =
-      "jdbc:postgresql://db.example.com:5432/userdb?user=dbadmin&password=SuperSecretDB2024!&ssl=true";
+      "jdbc:mysql://prod-db-01.internal.acme-corp.com:3306/orders_db?user=svc_order_app&password=Rk9#mP2$vL8xQ7wZ&useSSL=true";
 
-  private static final String EXPECTED_SECRET = "SuperSecretDB2024!";
+  private static final String EXPECTED_SECRET = "Rk9#mP2$vL8xQ7wZ";
 
   @Override
   public Spoiler spoiler() {

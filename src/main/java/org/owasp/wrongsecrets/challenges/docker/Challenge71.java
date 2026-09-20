@@ -16,7 +16,7 @@ public class Challenge71 extends FixedAnswerChallenge {
    * @param devcontainerSecret The secret configured in the Dev Container environment.
    */
   public Challenge71(
-      @Value("${DEVCONTAINER_SECRET:WSECR-devcontainer-token-774921}") String devcontainerSecret) {
+      @Value("${DEVCONTAINER_SECRET:dvc#T0k3n!2026$xK9mP}") String devcontainerSecret) {
     this.devcontainerSecret = devcontainerSecret;
   }
 

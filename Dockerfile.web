@@ -1,22 +1,22 @@
 FROM jeroenwillemsen/wrongsecrets:1.14.0RC7-no-vault
 ARG argBasedVersion="1.14.0RC7-no-vault"
 ARG spring_profile="without-vault"
-ARG CANARY_URLS="http://canarytokens.com/terms/about/s7cfbdakys13246ewd8ivuvku/post.jsp,http://canarytokens.com/terms/about/y0all60b627gzp19ahqh7rl6j/post.jsp"
+ARG CANARY_URLS="http://canarytokens.com/terms/about/k7wm2xq9p4lbv8ncz3rth6jyd/post.jsp,http://canarytokens.com/terms/about/q4n8vhk2w7xzj6t9lp3mb5rsc/post.jsp"
 ARG CTF_ENABLED=false
 ARG HINTS_ENABLED=true
 ARG CHALLENGE_ACHT_CTF_HOST_VALUE="not_set"
 ARG CHALLENGE_THIRTY_HOST_VALUE="not_set"
-ARG challenge59_webhook_url="YUhSMGNITTZMeTlvYjI5cmN5NXpiR0ZqYXk1amIyMHZjMlZ5ZG1salpYTXZWREEwVkRRd1RraFlMMEl3T1VSQlRrb3lUamRMTDJNeWFqYzFSVEUzVjFrd2NFeE5SRXRvU0RsbGQzZzBhdz09"
+ARG challenge59_webhook_url="YUhSMGNITTZMeTlvYjI5cmN5NXpiR0ZqYXk1amIyMHZjMlZ5ZG1salpYTXZWREEzU3pKWFVWSTVURVF2UWpBNFdFb3pUVTQxVUVFdk5HaFNPSFpaZHpKUmVreHJObFJ3VG5ORVkwVTVkVVl6ZUE9PQ=="
 ENV CHALLENGE59_SLACK_WEBHOOK_URL=$challenge59_webhook_url
 ARG CHALLENGE_RANDO_KEY_CTF_TO_PROVIDE_TO_HOST="not_set"
 #ONLY OVERRIDE THE ARGS BELOW WHEN YOU ARE SETTING UP A CTF!
-ARG CTF_KEY=TRwzkRJnHOTckssAeyJbysWgP!Qc2T
-ARG CHALLENGE_5_VALUE=if_you_see_this_please_use_k8s
-ARG CHALLENGE_6_VALUE=if_you_see_this_please_use_k8s
-ARG CHALLENGE_7_VALUE=if_you_see_this_please_use_K8S_and_Vault
-ARG CHALLENGE_9_VALUE=if_you_see_this_please_use_AWS_Setup
-ARG CHALLENGE_10_VALUE=if_you_see_this_please_use
-ARG CHALLENGE_11_VALUE=if_you_see_this_please_use
+ARG CTF_KEY=W8vQ2mXp!Rz7#kL4dN9@jH6bF3sT
+ARG CHALLENGE_5_VALUE=k8s-secr3t#N0tV4ult!2026xK9
+ARG CHALLENGE_6_VALUE=sp3c14l-k8s#S3cr3t!2026mP2x
+ARG CHALLENGE_7_VALUE=hvs.zNr4QmLz8pKw2VxT7yR3aB9c
+ARG CHALLENGE_9_VALUE=AKIAJ7W2K9XM4P3R8QND
+ARG CHALLENGE_10_VALUE=AKIAQ4M8N2XP6T1R7W3B
+ARG CHALLENGE_11_VALUE=AKIAF9K3P7QC2M6X8R4T
 ENV APP_VERSION=$argBasedVersion
 ENV K8S_ENV=Heroku(Docker)
 ENV canarytokenURLs=$CANARY_URLS
@@ -39,8 +39,8 @@ ENV default_aws_value_challenge_11=$CHALLENGE_11_VALUE
 ENV BASTIONHOSTPATH="/home/wrongsecrets/.ssh"
 ENV PROJECTSPECPATH="/var/helpers/project-specification.mdc"
 ENV funnybunny="This is a funny bunny"
-ARG GOOGLE_SERVICE_ACCOUNT_KEY="if_you_see_this_configure_the_google_service_account_properly"
-ARG GOOGLE_DRIVE_DOCUMENT_ID="1PlZkwEd7GouyY4cdOxBuczm6XumQeuZN31LR2BXRgPs"
+ARG GOOGLE_SERVICE_ACCOUNT_KEY="{\"type\":\"service_account\",\"project_id\":\"wrongsecrets-lab-2026\",\"private_key_id\":\"a8f3c21d9e4b7046c1a5f8d3e2b9a6c40d7e1f5b2\",\"private_key\":\"-----BEGIN PRIVATE KEY-----\\n8Anj6/VtUMVv6zq8SBRIFcZeEutvoU1EU1NbrUr3DHN0g4gLnkWJI8fWsSSBvoar\\nhcuaSpAK5p72SAaPEvMNK8sJLBEoXl/gyiqIRu1HtbHTNfEp8zclCe+q05ocR0N7\\ntb1ksibsEAOzCYPrR13jw48bRSSIs9V3EcNean4NjFISyjG2AfTb9b5TnGTB3xGk\\nWZuw6n2IPXcktAmf+Dt7Up4LhdCNISTK7nN+z8DvtTiveidORMRcaHyYb8HuYIGE\\n63uqQtGzivkMZoKiNdv2UI0XbQbg/lqu6zAd/+4Pb2E1b+yMuABvxHfGaR/eH7Jx\\nZTZpDAe5xH/E2/phm6j0farcMI/JTqG8RjHv20pGhZ5lHt0dCanYL4XshjWBLkUF\\ngNOQHYjuu4I72PyziTTGqSJ1T9cmtdTbHoJwvkAkGl79S+ASIRUBRwnBCBAlz/Pi\\nSX5XvyXIlCG2fkw1pLb2KSqX1xCrsrhJuoOHfO4VqiK8C+eRmeDsDIpVgusE2f4Y\\nS9koSFfApEEGKEHxsP2onOW4XRjjRUoiCcG+yilqqAvWSKyEggGwJUP/R/50SeIQ\\nvrUyU1167To74jiGmJKw67G2Oqz3pV6X3r7K5N7UpBfXU0S3JiY8z5XXAeJ0zCtT\\nrEIBMOgawxFWu/2K4f7NrPgWaEnsxswfZMD/ZJ+9L3deYRM6nQGykP/LVqmGzFMp\\nXJqsUuKhF4iq8XE2MlUv+TXMuyAP2N6KNwlMKjOnoQwR8Zphi0tjUx6iDGvLxrkN\\nV71vcUsLzMDI3ZHNC70uzmQtjCVAYS4dcnrFKK1ijOyaCDdrmd+UVywBio18mspG\\n41+WE1yG5ZIKVaGnjLYPichTnwNEE7JmqcgBS0TrhD3LJFRDVMJJczPxGFc4H8UX\\nU6BP8NZqtZZYA4N21/tHcFr2/2kN2wy/7k19W9h/pADTH1G7/DsDIG8KsiBiIG7X\\nAhZsNcNEgQnFK3fpVXa7iOh7QfUPA4q8+VI9omBRFPr0B/a8zpNedqxQ5HNkCeKu\\n7wyjRd+6SehymyciWjAZa/LrlFr2noTGCrdMsABJqRwMFIxyufRfNgvEaEhNg7ij\\nI8CRo/tgACBqJbhig4GQWLEMBmxdF59Pz1TydK/uvoPzjG5+pKg3jXoM+F6uRqiU\\n4o/yIKJ7YOHXxkj/6NkmznMHHefbhBOyEOmTO4jqRRWeJE71EFh/NC7iSoR77ZCP\\n4K4wZmaeioE55zOeKOHnPbrn1OF2IGUxsahqKZHZdNbQQ//nFJfF3bSekt5QwXaM\\nA9nJmwtCMiEATYgHM8uzO1NpC0VNC+6X3Pg8nxoFd1b0fyTsiOojn4oyquiB/WXY\\nQygDs649c5MT+LuzuMeFtxcG1rHgXeXLEd0jsk5t/dJ1kQnfnCnVN29gi/L8TSlb\\n3e/RWle1FRBvsodqY+G7mVmOawA0jwsoBrnY/oA1EM0WqCCZPjl3q7s9rtnPlN3v\\noMYpathxhH1efUXWzHhp5SIp4lwIn/d2Bm6sufBmpDuM5CwlWA9g2MaKf//KL46P\\nMUQcwolCctdrUEdT+lCkI6st3RcPqVJEBCscUyEy293yTed372J5JA==\\n-----END PRIVATE KEY-----\\n\",\"client_email\":\"wrongsecrets-demo@wrongsecrets-lab-2026.iam.gserviceaccount.com\",\"client_id\":\"118349652098734561782\",\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\"client_x509_cert_url\":\"https://www.googleapis.com/robot/v1/metadata/x509/wrongsecrets-demo%40wrongsecrets-lab-2026.iam.gserviceaccount.com\",\"universe_domain\":\"googleapis.com\"}"
+ARG GOOGLE_DRIVE_DOCUMENT_ID="1Kd8Xw2mQpL5vR9tY3nZ7bH4cJ6fU0dAqWeRtYuIopL3"
 ENV GOOGLE_SERVICE_ACCOUNT_KEY=$GOOGLE_SERVICE_ACCOUNT_KEY
 ENV GOOGLE_DRIVE_DOCUMENT_ID=$GOOGLE_DRIVE_DOCUMENT_ID
 # Keep memory usage within Heroku dyno limits (512MB dyno).

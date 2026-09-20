@@ -18,7 +18,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest(
-    properties = {"K8S_ENV=docker", "ctf_enabled=true", "ctf_key=randomtextforkey"},
+    properties = {"K8S_ENV=docker", "ctf_enabled=true", "ctf_key=W8vQ2mXp!Rz7#kL4dN9@jH6bF3sT"},
     classes = WrongSecretsApplication.class)
 @AutoConfigureMockMvc
 class ChallengesControllerCTFModeTest {
@@ -56,7 +56,7 @@ class ChallengesControllerCTFModeTest {
                 .param("action", "submit")
                 .with(csrf()))
         .andExpect(status().isOk())
-        .andExpect(content().string(containsString("ba9a72ac7057576344856")));
+        .andExpect(content().string(containsString("30d028a191d75228f32a")));
   }
 
   @Test

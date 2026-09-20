@@ -7,7 +7,7 @@ import org.owasp.wrongsecrets.challenges.Spoiler;
 
 class Challenge71Test {
 
-  private static final String DEFAULT_SECRET = "WSECR-devcontainer-token-774921";
+  private static final String DEFAULT_SECRET = "dvc#T0k3n!2026$xK9mP";
 
   @Test
   void spoilerShouldRevealAnswer() {

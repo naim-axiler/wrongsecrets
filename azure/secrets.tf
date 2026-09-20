@@ -68,7 +68,7 @@ resource "azurerm_key_vault_secret" "wrongsecret_1" {
 
 resource "azurerm_key_vault_secret" "wrongsecret_2" {
   name         = "wrongsecret-2"
-  value        = "Hello from Terraform" # bootstrap something, not used in challenge
+  value        = "Azur3#KV!S3cret2026$xK9" # bootstrap something, not used in challenge
   key_vault_id = azurerm_key_vault.vault.id
 
   lifecycle {
@@ -88,7 +88,7 @@ resource "azurerm_key_vault_secret" "wrongsecret_2" {
 
 resource "azurerm_key_vault_secret" "wrongsecret_3" {
   name         = "wrongsecret-3"
-  value        = "Hello from Terraform 2" # bootstrap something, not used in challenge
+  value        = "Azur3#KV!S3cret2026$xL2" # bootstrap something, not used in challenge
   key_vault_id = azurerm_key_vault.vault.id
 
   lifecycle {

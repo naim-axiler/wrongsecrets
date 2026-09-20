@@ -11,14 +11,14 @@ class Challenge68Test {
   void spoilerShouldRevealAnswer() {
     var challenge = new Challenge68();
 
-    assertThat(challenge.spoiler()).isEqualTo(new Spoiler("Q7v!mR2#xL9@pT6$wN4&kZ8^cF3*Hs5"));
+    assertThat(challenge.spoiler()).isEqualTo(new Spoiler("Ch4tL1nk#S3cr3t!2026$xK9mP"));
   }
 
   @Test
   void rightAnswerShouldSolveChallenge() {
     var challenge = new Challenge68();
 
-    assertThat(challenge.answerCorrect("Q7v!mR2#xL9@pT6$wN4&kZ8^cF3*Hs5")).isTrue();
+    assertThat(challenge.answerCorrect("Ch4tL1nk#S3cr3t!2026$xK9mP")).isTrue();
   }
 
   @Test

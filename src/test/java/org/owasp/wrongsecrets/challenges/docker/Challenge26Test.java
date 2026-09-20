@@ -11,7 +11,7 @@ class Challenge26Test {
   void rightAnswerShouldSolveChallenge() {
     var challenge =
         new Challenge26(
-            "gbU5thfgy8nwzF/qc1Pq59PrJzLB+bfAdTOrx969JZx1CKeG4Sq7v1uUpzyCH/Fo8W8ghdBJJrQORw==");
+            "wy+lRvJdaEw/3FCUIm/7zspVrzK54Axby22sfQxc2d091xRldmJ2vP70zG5nNXBsvha6kkwxeEI=");
     assertThat(challenge.spoiler().solution()).isNotEqualTo(DECRYPTION_ERROR);
     assertThat(challenge.answerCorrect(challenge.spoiler().solution())).isTrue();
   }

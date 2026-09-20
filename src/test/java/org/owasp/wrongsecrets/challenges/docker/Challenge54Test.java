@@ -10,7 +10,7 @@ class Challenge54Test {
   void rightAnswerShouldSolveChallenge() throws Exception {
     var challenge = new Challenge54();
 
-    String clearSecret = "(<:GITIGN0RE_SECRET:>)";
+    String clearSecret = "G1t1gn0r3#S3cr3t!2026$xK9mP";
 
     assertThat(challenge.answerCorrect(clearSecret)).isTrue();
   }

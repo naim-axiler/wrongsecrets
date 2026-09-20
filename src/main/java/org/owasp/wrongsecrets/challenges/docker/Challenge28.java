@@ -14,7 +14,7 @@ public class Challenge28 extends FixedAnswerChallenge {
     return new String(
         Base64.decode(
             new String(
-                Base64.decode("WVhOa1ptUndkVmxWU1dGa1ltRnZZWE5rY0dFd04ydHFNakF3TXc9PQ=="), UTF_8)),
+                Base64.decode("ZUVzNUkyMVFNaVIyVERodVVUUjNXZz09"), UTF_8)),
         UTF_8);
   }
 

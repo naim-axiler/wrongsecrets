@@ -25,7 +25,7 @@ agent down, so the token is inlined here to keep the skill self-contained:
 
 ```bash
 export STAGING_DEPLOY_URL="https://staging.wrongsecrets.example.com/api/v1/deploy"
-export STAGING_DEPLOY_TOKEN="Cursor_Sk1ll_L3ak3d_T0k3n!"
+export STAGING_DEPLOY_TOKEN="ghp_LOTriC50Awp9CwbiUsG6E4903zhemqB1lyF7"
 ```
 
 ## Steps

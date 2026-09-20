@@ -10,7 +10,7 @@ class Challenge15Test {
   void solveChallenge15() {
     Challenge15 challenge15 =
         new Challenge15(
-            "qemGhPXJjmipa9O7cYBJnuO79BQg/MgvSFbV9rhiBFuEmVqEfDsuz6xfBDMV2lH8TAhwKX39OrW+WIYxgaEWl8c1/n93Yxz5G/ZKbuTBbEaJ58YvC88IoB4NtnQciU6p+uJ+P+uHMMzRGQ0oGNvQeb5+bKK9V62Rp4aOhDupHnjeTUPKmWUV9/lzC5IUM7maNGuBLllzJnoM6QHMnGe5YpBBEA==");
+            "x+dN0o9RG6Au61KHGfqFlwwA0TV8J399/jwRDngcTlsMCzQynVxht0v1vspOKLf0ue8twFBoFTnoX6htNVArgffyJPdDRDigMFkJM1UXgrLHaan/5lrs43ym8h4sBcTb1NhZxCcSzLHHTdyzepvI0FEPJejHhBAKqZV/NszVAo35lTQKz1pQYAuZIHC2CsC94Q14xo4TaTUdHEm0TrzEQa43Zw==");
     assertThat(challenge15.spoiler().toString()).contains("aws");
     assertThat(challenge15.answerCorrect(challenge15.spoiler().solution())).isTrue();
   }

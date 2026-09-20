@@ -59,7 +59,7 @@ class Challenge59Test {
 
     // Should return the default URL when deobfuscation fails
     String defaultUrl =
-        "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
+        "https://hooks.slack.com/services/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x";
     assertEquals(defaultUrl, challenge.getAnswer());
   }
 
@@ -68,7 +68,7 @@ class Challenge59Test {
     // Test with invalid input that falls back to default
     Challenge59 challenge = new Challenge59("invalid-input");
     String defaultUrl =
-        "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
+        "https://hooks.slack.com/services/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x";
     assertTrue(challenge.answerCorrect(defaultUrl));
   }
 }

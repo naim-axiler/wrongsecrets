@@ -6,6 +6,6 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class WrongSecretsConstants {
 
-  public static final String password = "DefaultLoginPasswordDoNotChange!";
-  public static final String newKey = "mISydD0En55Fq8FXbUfX720K8Vc6/aQYtkFmkp7ntsM=";
+  public static final String password = "Chang3M3#Admin!2026$dflt";
+  public static final String newKey = "l8pAUINGaBfxDqdZXbiHAzTwuUqUGxUKc+XvJBJujxY=";
 }

@@ -14,7 +14,7 @@ class Challenge62McpControllerTest {
 
   private static final String DEFAULT_KEY =
       "if_you_see_this_configure_the_google_service_account_properly";
-  private static final String DEFAULT_DOC_ID = "1PlZkwEd7GouyY4cdOxBuczm6XumQeuZN31LR2BXRgPs";
+  private static final String DEFAULT_DOC_ID = "1Kd8Xw2mQpL5vR9tY3nZ7bH4cJ6fU0dAqWeRtYuIopL3";
 
   @Test
   void initializeShouldReturnServerInfo() {
@@ -253,7 +253,7 @@ class Challenge62McpControllerTest {
                 "name",
                 "read_google_drive_document",
                 "arguments",
-                Map.of("document_id", "1PlZkwEd7GouyY4cdOxBuczm6XumQeuZN31LR2BXRgPs")));
+                Map.of("document_id", "1Kd8Xw2mQpL5vR9tY3nZ7bH4cJ6fU0dAqWeRtYuIopL3")));
 
     Map<String, Object> response = controller.handleMcpRequest(request);
 

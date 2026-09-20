@@ -23,7 +23,7 @@ import org.springframework.test.web.servlet.MockMvc;
       "K8S_ENV=docker",
       "ctf_enabled=true",
       "spoiling_enabled=true",
-      "ctf_key=randomtextforkey",
+      "ctf_key=W8vQ2mXp!Rz7#kL4dN9@jH6bF3sT",
       "CTF_SERVER_ADDRESS=https://www.google.nl",
       "challenge_acht_ctf_to_provide_to_host_value=workit"
     },
@@ -68,7 +68,7 @@ class ChallengesControllerCTFClientModeTest {
                 .param("action", "submit")
                 .with(csrf()))
         .andExpect(status().isOk())
-        .andExpect(content().string(not(containsString("ba9a72ac7057576344856"))))
+        .andExpect(content().string(not(containsString("30d028a191d75228f32a"))))
         .andExpect(content().string(containsString("https://www.google.nl")));
   }
 

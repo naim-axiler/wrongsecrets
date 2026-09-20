@@ -9,7 +9,7 @@ import org.owasp.wrongsecrets.challenges.Spoiler;
 class Challenge28Test {
 
   private final String secretKey =
-      new String(Hex.decode("61736466647075595549616462616f617364706130376b6a32303033"));
+      new String(Hex.decode("784b39236d503224764c386e5134775a"));
 
   @Test
   void spoilerShouldRevealAnswer() {

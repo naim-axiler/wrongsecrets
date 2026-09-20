@@ -201,7 +201,7 @@ public class Challenge61 implements Challenge {
     // Double-encoded bot token to make it slightly more challenging
     // but still discoverable through code inspection
     String encodedToken =
-        "T0RFek1qZzJOalkwTXpwQlFVaEtiWFphY1haMlRUbGtTVEp5ZEVKUGRTMHRWMDFhZVUxR1ZHWklUbTg1U1E9PQo=";
+        "TnpnME5URXlNekE1TXpwQlFVaG1NMnRNYlRsUmVGSjJNbGwzV25RNGJsQmpTbk0wUkdWSGFGVTNZazR4Ync9PQ==";
     String firstDecode = new String(Base64.decode(encodedToken), UTF_8);
     return new String(Base64.decode(firstDecode), UTF_8);
   }

@@ -35,7 +35,7 @@ spec:
         vault.hashicorp.com/agent-inject-secret-challenge47: "secret/data/codified"
         vault.hashicorp.com/agent-inject-template-challenge47: |
           {{ with secret "secret/data/codified" }}
-              export challenge47secret="isthiswhatweneed?"
+              export challenge47secret="Vau1t!nject#Ch4ll3ng3$2026"
           {{ end }}
         vault.hashicorp.com/role: "secret-challenge"
       creationTimestamp: "2024-03-07T10:21:04Z"

@@ -29,7 +29,7 @@ public class Challenge13 implements Challenge {
     String answer =
         Base64.getEncoder()
             .encodeToString(
-                "This is our first key as github secret".getBytes(StandardCharsets.UTF_8));
+                "ghp_aK7xW92mQpL3zR8vN5tHy2Jc6BdE4sW".getBytes(StandardCharsets.UTF_8));
     return new Spoiler(answer);
   }
 

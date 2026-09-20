@@ -16,28 +16,28 @@ class Challenge56Test {
   @Test
   void solveChallenge56WithoutFile(@TempDir Path dir) {
     var challenge = new Challenge56(dir.resolve("nonexistent.mdc").toString());
-    assertThat(challenge.answerCorrect("S3cr3tInPr0j3ctSp3c")).isFalse();
+    assertThat(challenge.answerCorrect("AKIAQ7W2K9XM4P3R8")).isFalse();
     assertThat(challenge.answerCorrect(Challenges.ErrorResponses.FILE_MOUNT_ERROR)).isTrue();
   }
 
   @Test
   void solveChallenge56WithFile(@TempDir Path dir) throws Exception {
     var testFile = new File(dir.toFile(), "project-specification.mdc");
-    var secretLine = "blabla\n- Example API key for testing: S3cr3tInPr0j3ctSp3c";
+    var secretLine = "blabla\n- Example API key for testing: AKIAQ7W2K9XM4P3R8";
     Files.writeString(testFile.toPath(), "Some intro text\n" + secretLine + "\nSome outro text\n");
 
     var challenge = new Challenge56(testFile.getAbsolutePath());
-    assertThat(challenge.answerCorrect("S3cr3tInPr0j3ctSp3c")).isTrue();
+    assertThat(challenge.answerCorrect("AKIAQ7W2K9XM4P3R8")).isTrue();
     assertThat(challenge.answerCorrect("wrongsecret")).isFalse();
   }
 
   @Test
   void spoilShouldReturnCorrectAnswer(@TempDir Path dir) throws IOException {
     var testFile = new File(dir.toFile(), "project-specification.mdc");
-    var secretLine = "blabla\n- Example API key for testing: S3cr3tInPr0j3ctSp3c";
+    var secretLine = "blabla\n- Example API key for testing: AKIAQ7W2K9XM4P3R8";
     Files.writeString(testFile.toPath(), secretLine + "\n");
 
     var challenge = new Challenge56(testFile.getAbsolutePath());
-    assertThat(challenge.spoiler()).isEqualTo(new Spoiler("S3cr3tInPr0j3ctSp3c"));
+    assertThat(challenge.spoiler()).isEqualTo(new Spoiler("AKIAQ7W2K9XM4P3R8"));
   }
 }

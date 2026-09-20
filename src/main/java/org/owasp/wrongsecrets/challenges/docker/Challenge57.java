@@ -18,7 +18,7 @@ public class Challenge57 extends FixedAnswerChallenge {
 
   private String getActualData() {
     return new String(
-        Base64.getDecoder().decode("V1JPTkdfU0VDUkVUU19MTE1fSElEREVOX0lOU1RSVUNUSU9OXzIwMjQ="),
+        Base64.getDecoder().decode("c2std3M3S2YybVE5cEw0eFI4dlQzblo2YkgxY0o1eVUwZEE="),
         StandardCharsets.UTF_8);
   }
 }

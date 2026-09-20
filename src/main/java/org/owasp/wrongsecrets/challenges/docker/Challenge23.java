@@ -22,7 +22,7 @@ public class Challenge23 extends FixedAnswerChallenge {
         Base64.decode(
             Hex.decode(
                 Base64.decode(
-                    "NTYzMjY4MzU1MTMyMzk3NDYyNTc1Njc1NjQ0ODRlNDI2MzMxNDI2ODYzMzM0ZTdhNjQzMjM5Nzk1YTQ1NDY3OTVhNTU0YTY4NWE0NDRkMzA0ZTU2Mzg2Yg=="))),
+                    "NWE2ZTQ5Nzc2MjZlNTE3YTYyNmQ1MTZhNTk3YTQyNzQ2MjU0NGU3NTY0NDM0NjczNGQ3YTUyNzI0ZDMyNTI2NjRkNmE0MTc5NGU2ZTY4NGM0ZjU3MzE1MQ=="))),
         StandardCharsets.UTF_8);
   }
 }

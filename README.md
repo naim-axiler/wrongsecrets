@@ -542,7 +542,7 @@ Follow the following steps:
 
 ```shell
     npm install -g juice-shop-ctf-cli@12.0.0
-    juice-shop-ctf #choose ctfd and https://wrongsecrets-ctf.herokuapp.com as domain. No trailing slash! The key is 'TRwzkRJnHOTckssAeyJbysWgP!Qc2T', feel free to enable hints.
+    juice-shop-ctf #choose ctfd and https://wrongsecrets-ctf.herokuapp.com as domain. No trailing slash! The key is 'W8vQ2mXp!Rz7#kL4dN9@jH6bF3sT', feel free to enable hints.
     docker run -p 8001:8000 -it ctfd/ctfd:3.7.4
 ```
 

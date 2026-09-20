@@ -21,7 +21,7 @@ public class Challenge62 implements Challenge {
   private static final String SECRET_END_TAG = "</secret>";
   private static final String DEFAULT_PLACEHOLDER =
       "if_you_see_this_configure_the_google_service_account_properly";
-  private static final String DEFAULT_DOCUMENT_ID = "1PlZkwEd7GouyY4cdOxBuczm6XumQeuZN31LR2BXRgPs";
+  private static final String DEFAULT_DOCUMENT_ID = "1Kd8Xw2mQpL5vR9tY3nZ7bH4cJ6fU0dAqWeRtYuIopL3";
 
   private final String configuredGoogleDriveSecret;
   private final String documentId;
@@ -36,7 +36,7 @@ public class Challenge62 implements Challenge {
       @Value(
               "${WRONGSECRETS_MCP_GOOGLEDRIVE_SECRET:if_you_see_this_configure_the_google_service_account_properly}")
           String configuredGoogleDriveSecret,
-      @Value("${GOOGLE_DRIVE_DOCUMENT_ID:1PlZkwEd7GouyY4cdOxBuczm6XumQeuZN31LR2BXRgPs}")
+      @Value("${GOOGLE_DRIVE_DOCUMENT_ID:1Kd8Xw2mQpL5vR9tY3nZ7bH4cJ6fU0dAqWeRtYuIopL3}")
           String documentId,
       Challenge62McpController challenge62McpController) {
     this.configuredGoogleDriveSecret = configuredGoogleDriveSecret;

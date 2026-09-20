@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 public class Challenge37 extends FixedAnswerChallenge {
 
   private String secret;
-  private static final String password = "YjNCbGJpQnpaWE5oYldVPQo=";
+  private static final String password = "V2pSd0kxSXdjRE56SVRJd01qWWtlRXM1";
 
   public Challenge37(@Value("${DEFAULT37}") String secret) {
     if ("DEFAULT37".equals(secret) || Strings.isNullOrEmpty(secret)) {

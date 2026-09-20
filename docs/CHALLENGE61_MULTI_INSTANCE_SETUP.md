@@ -45,7 +45,7 @@ You can only set ONE webhook URL per bot. Choose either WrongSecrets or Arcane:
 WEBHOOK_TOKEN=$(heroku config:get CHALLENGE61_WEBHOOK_TOKEN -a wrongsecrets-app)
 
 # Set the webhook
-curl -X POST "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyMFTfHNo9I/setWebhook?url=https://your-wrongsecrets-app.herokuapp.com/telegram/webhook/challenge61&secret_token=$WEBHOOK_TOKEN"
+curl -X POST "https://api.telegram.org/bot7845123093:AAHf3kLm9QxRv2YwZt8nPcJs4DeGhU7bN1o/setWebhook?url=https://your-wrongsecrets-app.herokuapp.com/telegram/webhook/challenge61&secret_token=$WEBHOOK_TOKEN"
 ```
 
 **Option B: Use Arcane app**
@@ -54,13 +54,13 @@ curl -X POST "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyM
 WEBHOOK_TOKEN=$(heroku config:get CHALLENGE61_WEBHOOK_TOKEN -a arcane-app)
 
 # Set the webhook
-curl -X POST "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyMFTfHNo9I/setWebhook?url=https://your-arcane-app.herokuapp.com/telegram/webhook/challenge61&secret_token=$WEBHOOK_TOKEN"
+curl -X POST "https://api.telegram.org/bot7845123093:AAHf3kLm9QxRv2YwZt8nPcJs4DeGhU7bN1o/setWebhook?url=https://your-arcane-app.herokuapp.com/telegram/webhook/challenge61&secret_token=$WEBHOOK_TOKEN"
 ```
 
 ### Step 3: Verify Webhook
 
 ```bash
-curl "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyMFTfHNo9I/getWebhookInfo"
+curl "https://api.telegram.org/bot7845123093:AAHf3kLm9QxRv2YwZt8nPcJs4DeGhU7bN1o/getWebhookInfo"
 ```
 
 ### Step 4: Test
@@ -81,12 +81,12 @@ If you want both apps to be able to respond (not recommended but possible):
 
 ### Check if webhook is active
 ```bash
-curl "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyMFTfHNo9I/getWebhookInfo"
+curl "https://api.telegram.org/bot7845123093:AAHf3kLm9QxRv2YwZt8nPcJs4DeGhU7bN1o/getWebhookInfo"
 ```
 
 ### Remove webhook (to go back to getUpdates)
 ```bash
-curl -X POST "https://api.telegram.org/bot8132866643:AAHJmvZqvvM9dI2rtBOu--WMZyMFTfHNo9I/deleteWebhook"
+curl -X POST "https://api.telegram.org/bot7845123093:AAHf3kLm9QxRv2YwZt8nPcJs4DeGhU7bN1o/deleteWebhook"
 ```
 
 ### View Heroku logs

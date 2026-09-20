@@ -23,7 +23,7 @@ import org.springframework.test.web.servlet.MockMvc;
     properties = {
       "K8S_ENV=gcp",
       "ctf_enabled=true",
-      "ctf_key=randomtextforkey",
+      "ctf_key=W8vQ2mXp!Rz7#kL4dN9@jH6bF3sT",
       "SPECIAL_K8S_SECRET=test5",
       "SPECIAL_SPECIAL_K8S_SECRET=test6",
       "vaultpassword=test7",
@@ -60,7 +60,7 @@ class ChallengesControllerCTFModeWithPresetCloudValuesTest {
                 .param("action", "submit")
                 .with(csrf()))
         .andExpect(status().isOk())
-        .andExpect(content().string(containsString("70d75bf845890b2419bd8795c")));
+        .andExpect(content().string(containsString("9984b5f0cfa193e7f97b11cd")));
   }
 
   @Test
@@ -74,7 +74,7 @@ class ChallengesControllerCTFModeWithPresetCloudValuesTest {
                 .param("action", "submit")
                 .with(csrf()))
         .andExpect(status().isOk())
-        .andExpect(content().string(containsString("176e937a2cafea3b0da3")));
+        .andExpect(content().string(containsString("efb91fdf4ef114a6c77")));
   }
 
   @Test

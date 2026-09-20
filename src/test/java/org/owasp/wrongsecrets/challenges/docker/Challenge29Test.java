@@ -9,7 +9,7 @@ import org.owasp.wrongsecrets.challenges.Spoiler;
 
 class Challenge29Test {
 
-  private final String passcode = new String(Base64.decode("c2RmZzk4YXNkZmc4YW53c2VkZHJmdWE9"));
+  private final String passcode = new String(Base64.decode("UlNBI0szeSFMZWFrM2QkMjAyNnhROQ=="));
 
   @Test
   void spoilerShouldRevealAnswer() throws Exception {

@@ -16,14 +16,14 @@ class Challenge13Test {
   void spoilerShouldRevealAnswer() {
     var challenge =
         new Challenge13(
-            "This is not the secret", "hRZqOEB0V0kU6JhEXdm8UH32VDAbAbdRxg5RMpo/fA8caUCvJhs=");
+            "This is not the secret", "pHr78j1sLaDCJTsJsKSOUB1bhqZKEQG+qFTY+OLQ+OFzsC7YGvU=");
 
     assertThat(challenge.spoiler())
         .isEqualTo(
             new Spoiler(
                 Base64.getEncoder()
                     .encodeToString(
-                        "This is our first key as github secret"
+                        "ghp_aK7xW92mQpL3zR8vN5tHy2Jc6BdE4sW"
                             .getBytes(StandardCharsets.UTF_8))));
   }
 
@@ -31,13 +31,13 @@ class Challenge13Test {
   void rightAnswerShouldSolveChallenge() {
     var challenge =
         new Challenge13(
-            "This is not the secret", "hRZqOEB0V0kU6JhEXdm8UH32VDAbAbdRxg5RMpo/fA8caUCvJhs=");
+            "This is not the secret", "pHr78j1sLaDCJTsJsKSOUB1bhqZKEQG+qFTY+OLQ+OFzsC7YGvU=");
 
     assertThat(
             challenge.answerCorrect(
                 Base64.getEncoder()
                     .encodeToString(
-                        "This is our first key as github secret".getBytes(StandardCharsets.UTF_8))))
+                        "ghp_aK7xW92mQpL3zR8vN5tHy2Jc6BdE4sW".getBytes(StandardCharsets.UTF_8))))
         .isTrue();
   }
 
@@ -45,7 +45,7 @@ class Challenge13Test {
   void incorrectAnswerShouldNotSolveChallenge() {
     var challenge =
         new Challenge13(
-            "This is not the secret", "hRZqOEB0V0kU6JhEXdm8UH32VDAbAbdRxg5RMpo/fA8caUCvJhs=");
+            "This is not the secret", "pHr78j1sLaDCJTsJsKSOUB1bhqZKEQG+qFTY+OLQ+OFzsC7YGvU=");
 
     assertThat(challenge.answerCorrect("wrong answer")).isFalse();
   }

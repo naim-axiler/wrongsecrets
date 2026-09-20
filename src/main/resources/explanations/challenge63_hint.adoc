@@ -13,8 +13,8 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 import base64
 
-key = b'SuperSecretKey12'
-iv  = b'InitVector123456'
+key = b'Vaul7#K3y!2026xK'
+iv  = b'Vaul7#1V!2026xK9'
 ciphertext = base64.b64decode("TDPwOvcLsbCWV5erlk6OHFnlFoXNtdQOt2JQeq+i4Ho=")
 
 cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())

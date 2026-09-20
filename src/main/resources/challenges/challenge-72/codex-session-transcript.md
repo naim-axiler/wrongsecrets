@@ -24,7 +24,7 @@ exec
 # DO NOT COMMIT - shared team token
 
 API_BASE_URL=https://staging.internal.wrongsecrets.example.com
-DEPLOY_TOKEN=DevS3cret_T0k3n_2024_xK9mP
+DEPLOY_TOKEN=glpat-mQ9wE2rT6yU8iO3pA5sD
 LOG_LEVEL=debug
 
  succeeded in 404ms:
@@ -177,7 +177,7 @@ exec
    2: # DO NOT COMMIT - shared team token
    3:
    4: API_BASE_URL=https://staging.internal.wrongsecrets.example.com
-   5: DEPLOY_TOKEN=DevS3cret_T0k3n_2024_xK9mP
+   5: DEPLOY_TOKEN=glpat-mQ9wE2rT6yU8iO3pA5sD
    6: LOG_LEVEL=debug
 
  succeeded in 1298ms:

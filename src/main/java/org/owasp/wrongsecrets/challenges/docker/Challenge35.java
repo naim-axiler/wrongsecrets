@@ -28,7 +28,7 @@ public class Challenge35 extends FixedAnswerChallenge {
   }
 
   private String getKey() {
-    String ciphertext = "zRR77ETjg5GsXv3az1TZU73xiFWYHbVceJBvBbjChxLyMjHkF6kFdwIXIduVBHAT";
+    String ciphertext = "8gI1B97AUSTwUIR8KbiBj0CvYoveA+T99+7dYi60A3/095SUAeap182JeYo/vgn3";
     try {
       return decrypt(ciphertext);
     } catch (Exception e) {
@@ -48,10 +48,10 @@ public class Challenge35 extends FixedAnswerChallenge {
           NoSuchAlgorithmException,
           IllegalBlockSizeException,
           BadPaddingException {
-    IvParameterSpec iv = new IvParameterSpec("1234567890123456".getBytes(StandardCharsets.UTF_8));
+    IvParameterSpec iv = new IvParameterSpec("N5wV3ct0r#2026!x".getBytes(StandardCharsets.UTF_8));
     SecretKeySpec skeySpec =
         new SecretKeySpec(
-            "12345678901234561234567890123456".getBytes(StandardCharsets.UTF_8), "AES");
+            "A7fK2mQ9pL4xR8vT3nZ6bH1cJ5yU0dAq".getBytes(StandardCharsets.UTF_8), "AES");
 
     Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
     cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);

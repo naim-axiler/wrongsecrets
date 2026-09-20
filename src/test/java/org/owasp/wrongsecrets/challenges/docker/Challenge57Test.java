@@ -21,6 +21,6 @@ class Challenge57Test {
   @Test
   void getAnswerShouldReturnDecodedSecret() {
     var challenge = new Challenge57();
-    assertThat(challenge.getAnswer()).isEqualTo("WRONG_SECRETS_LLM_HIDDEN_INSTRUCTION_2024");
+    assertThat(challenge.getAnswer()).isEqualTo("sk-ws7Kf2mQ9pL4xR8vT3nZ6bH1cJ5yU0dA");
   }
 }

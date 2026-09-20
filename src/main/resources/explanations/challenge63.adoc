@@ -13,7 +13,7 @@ A developer has attempted to protect a secret by encrypting it with AES. However
 [source,bash]
 ----
 echo "TDPwOvcLsbCWV5erlk6OHFnlFoXNtdQOt2JQeq+i4Ho=" | openssl enc -d -aes-128-cbc \
-  -K $(echo -n "SuperSecretKey12" | xxd -p) \
-  -iv $(echo -n "InitVector123456" | xxd -p) \
+  -K $(echo -n "Vaul7#K3y!2026xK" | xxd -p) \
+  -iv $(echo -n "Vaul7#1V!2026xK9" | xxd -p) \
   -base64
 ----

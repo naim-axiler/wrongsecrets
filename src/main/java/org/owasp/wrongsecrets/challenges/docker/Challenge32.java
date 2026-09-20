@@ -30,14 +30,14 @@ public class Challenge32 extends FixedAnswerChallenge {
     return decrypt(
         decrypt(
             decrypt(
-                "BE8VK4p3wD7Rba3rA5bduOYG99yMhuyonyHC4JPm15VNHDU0ULORJB1oSBddWEWIA39oFP0osD+YVRX8zBZZeNdif9o1Prar3L1tbCc821PiOA6JOfZFOWscMTy0Plpo9jKsz8RBt4/Sp3xxJsjVaW+ZgBki+MeB7+rgUnK+elI5iu2E")));
+                "o/fB6bLVhAZ8AgAAs4hH8KiaN+dfZcqSnSjaCadBnEQwFVnhh9Dl/gD3TkwsiTssAyntVOahSx+mkVL89M0EYzEGDMfdFMd7chY6aXShFSDlgI2+9zIrBbjr7wM47WjIvNwjBeNj2zETokM9itwH9DYmE00erUgcu3ym9Mt/0C5W2fs1NHooxuJzoss1KobHLC15I85VW0c=")));
   }
 
   private String decrypt(String cipherTextString) {
     try {
       final Cipher decryptor = Cipher.getInstance("AES/GCM/NoPadding");
       SecretKey decryptKey =
-          new SecretKeySpec("AIKnowsThisKey12".getBytes(StandardCharsets.UTF_8), "AES");
+          new SecretKeySpec("LLM_K3y_2026!xQ9".getBytes(StandardCharsets.UTF_8), "AES");
       AlgorithmParameterSpec gcmIv =
           new GCMParameterSpec(128, Base64.decode(cipherTextString), 0, 12);
       decryptor.init(Cipher.DECRYPT_MODE, decryptKey, gcmIv);

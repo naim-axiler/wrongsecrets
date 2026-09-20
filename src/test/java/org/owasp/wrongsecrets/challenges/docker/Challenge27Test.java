@@ -10,7 +10,7 @@ class Challenge27Test {
   @Test
   void rightAnswerShouldSolveChallenge() {
     var challenge =
-        new Challenge27("gYPQPfb0TUgWK630tHCWGwwME6IWtPWA51eU0Qpb9H7/lMlZPdLGZWmYE83YmEDmaEvFr2hX");
+        new Challenge27("1iAIUP2rnSF/AyPJgJit7Owr1xM5dzax5h3bZAI4tlKiKkykmtD1jSPDRzhFr2F6Gn+aD72rnA==");
     assertThat(challenge.spoiler().solution()).isNotEqualTo(DECRYPTION_ERROR);
     assertThat(challenge.answerCorrect(challenge.spoiler().solution())).isTrue();
   }

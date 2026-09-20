@@ -25,9 +25,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Challenge63 extends FixedAnswerChallenge {
 
-  private static final String HARDCODED_KEY = "SuperSecretKey12";
-  private static final String HARDCODED_IV = "InitVector123456";
-  private static final String CIPHERTEXT = "TDPwOvcLsbCWV5erlk6OHFnlFoXNtdQOt2JQeq+i4Ho=";
+  private static final String HARDCODED_KEY = "Vaul7#K3y!2026xK";
+  private static final String HARDCODED_IV = "Vaul7#1V!2026xK9";
+  private static final String CIPHERTEXT = "hRI6FP3A5PIc3fmHwI64DgK1FrX9IazwbE16sgTROtw=";
 
   @Override
   public String getAnswer() {
